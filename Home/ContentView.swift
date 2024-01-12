@@ -11,7 +11,7 @@ struct ContentView: View {
     
     // MARK: Stored properties
     
-    let firstGradientcolors = Gradient ( colors: [Color.blue, Color.yellow])
+    let firstGradientcolors = Gradient ( colors: [Color.deepBlue, Color.deepPurple, Color.darkYellow])
     
     //MARK: Computed properties
     var body: some View {
@@ -19,7 +19,7 @@ struct ContentView: View {
             
             //Background
             
-            LinearGradient(gradient: Gradient(colors: [Color.blue, Color.yellow]), startPoint: /*@START_MENU_TOKEN@*/.leading/*@END_MENU_TOKEN@*/, endPoint: /*@START_MENU_TOKEN@*/.trailing/*@END_MENU_TOKEN@*/)
+            LinearGradient(gradient: Gradient(colors: [Color.deepBlue,Color.deepPurple, Color.darkYellow]), startPoint: .topLeading, endPoint: .bottomTrailing)
                 .ignoresSafeArea()
             
             //Foreground

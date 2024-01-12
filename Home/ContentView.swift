@@ -11,7 +11,7 @@ struct ContentView: View {
     
     // MARK: Stored properties
     
-    let firstGradientcolors = Gradient ( colors: [Color.deepBlue, Color.deepPurple, Color.darkYellow])
+    let firstGradientcolors = Gradient ( colors: [.white, .blue])
     
     //MARK: Computed properties
     var body: some View {
@@ -19,9 +19,11 @@ struct ContentView: View {
             
             //Background
             
-            LinearGradient(gradient: Gradient(colors: [Color.deepBlue,Color.deepPurple, Color.darkYellow]), startPoint: .topLeading, endPoint: .bottomTrailing)
+            Color.orange
                 .ignoresSafeArea()
             
+            // Firsgt gradient
+            RadialGradient(gradient: firstGradientcolors, center: .center, startRadius: 100, endRadius: 300)
             //Foreground
             VStack {
                 Image(systemName: "globe")
